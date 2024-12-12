@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calcolatrice</title>
+    </head>
+    <body>
+        <div class="calcolatrice">
+            <input id="display" type="text" disabled>
+            <div class="tasti">
+                <button class="btn" onclick="aggiunginumero('1')">1</button>
+                <button class="btn" onclick="aggiunginumero('2')">2</button>
+                <button class="btn" onclick="aggiunginumero('3')">3</button>
+                <button class="btn" onclick="aggiunginumero('4')">4</button>
+                <button class="btn" onclick="aggiunginumero('5')">5</button>
+                <button class="btn" onclick="aggiunginumero('6')">6</button>
+                <button class="btn" onclick="aggiunginumero('7')">7</button>
+                <button class="btn" onclick="aggiunginumero('8')">8</button>
+                <button class="btn" onclick="aggiunginumero('9')">9</button>
+                <button class="btn" onclick="aggiunginumero('0')">0</button>
+                <button class="btn operatore" onclick="aggiunginumero('+')">+</button>
+                <button class="btn operatore" onclick="aggiunginumero('-')">-</button>
+                <button class="btn operatore" onclick="aggiunginumero('*')">*</button>
+                <button class="btn operatore" onclick="aggiunginumero('/')">/</button>
+                <button class="btn" onclick="calcola()">=</button>
+                <button calss="tbn cancella" onclick="cancella()">cancella</button>
+</div>
+</div>
+<style>
+    .tasti{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;                             
+    justify-content: center;               
+  }
+  button {
+    padding: 20px;
+    }
+  </style>
+
+               
+            </body>
+            <script src="script.js"></script>
+</html>
